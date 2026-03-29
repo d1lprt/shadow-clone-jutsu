@@ -13,7 +13,7 @@ let gestureModel = null;
 
 async function loadGestureModel() {
   try {
-    gestureModel = await tf.loadLayersModel("./assets/gesture-model.json");
+    gestureModel = await tf.loadLayersModel("/assets/gesture-model.json");
     console.log("Gesture model loaded");
   } catch (e) {
     console.error("Failed to load gesture model:", e);
